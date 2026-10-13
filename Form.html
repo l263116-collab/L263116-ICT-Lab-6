@@ -1,0 +1,67 @@
+<!Doctype html>
+
+<html>
+<head>
+<title>Continential Hotel Reservation Form</title>
+<link rel="stylesheet"href="Form.css">
+</head>
+<body>
+<h2>Continential Hotel Reservation Form</h2>
+<form action="/action_page.php">
+<table border="1"cellpadding="8"cellspacing="0">
+<tr>
+<td><b>Name</b></td>
+<td><input type="text"value="Enter your name:"class="text-input-long"></td> 
+</tr>
+<tr>
+<td><b>eMail</b></td>
+<td><input type="text"value="info@continential.pk"class="text-input-long"></td>
+</tr>
+<tr>
+<td><b>Mobile No</b></td>
+<td><input type="text"value="Enter your cell no"class="input-text-long"></td>
+</tr>
+<tr>
+<td><b>Arrival Time</b></td>
+<td><input type="time"></td>
+</tr>
+<tr>
+<td><b>Departure </b></td>
+<td><input type="time"><input type="time"></td>
+</tr>
+<tr>
+<td><b>Room Type</b></td>
+<td>
+<input type="radio"name="room"id="single"><label for="Single">Single</label>
+<input type="radio"name="room"id="double><label for="double">Double</label><br>
+<input type="radio"name="room"id="presidential suite"><label for="presidential suite">Presidential Suite</label>
+</td>
+</tr>
+<tr>
+<td><b>Prefrences</b></td>
+<td>
+<input type="checkbox"id="non smoking"><label for="non smoking">Non-Smoking</label><br>
+<input type="checkbox"id="internet"><label for="internet">Internet</label><br>
+<input type="checkbox"id="firm mattress"><label for="firm mattress">Firm mattress</label>
+</td>
+</tr>
+<tr>
+<td><b>Mode of Payement</b></td>
+<td>
+<input type="checkbox"id="cash"><label for="cash">Cash</label>
+<input type="checkbox"id="check"><label for="cash">Cash</label><br>
+<input type="checkbox"id="credit card"><label for="credit card">Credit Card</label>
+<select>
+<option>Select Card</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="102" class="submit-cell">
+<input type="submit" value="Send Data">
+</td>
+</tr>
+</table>
+</body>
+</html>
+

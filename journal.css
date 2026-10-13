@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2f1;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.main-header {
+    background-color: #9ee3e3;
+    padding: 15px 0;
+    border-bottom: 2px solid #b2dfdb;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: right;
+}
+
+.site-tagline {
+    color: #00796b;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 220px;
+    max-width: 280px;
+}
+
+.sidebar-box {
+    background-color: #ffffff;
+    border: 4px solid #00a896;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.sidebar-box h2 {
+    color: #00a896;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.sidebar-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.sidebar-box li {
+    margin-bottom: 8px;
+}
+
+.sidebar-box a {
+    color: #0288d1;
+    text-decoration: none;
+}
+
+.sidebar-box a:hover {
+    text-decoration: underline;
+}
+
+.content-posts {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blog-post {
+    background-color: #ffffff;
+    border: 1px solid #b2dfdb;
+    border-radius: 4px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.post-header {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    border-bottom: 2px dashed #0288d1;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.post-date {
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.post-title {
+    color: #00a896;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.post-body {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.post-text {
+    flex: 2;
+    font-size: 0.95rem;
+    color: #555555;
+    text-align: justify;
+}
+
+.post-image {
+    flex: 1;
+    max-width: 200px;
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    background: #fafafa;
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        max-width: 100%;
+    }
+
+    .post-body {
+        flex-direction: column;
+    }
+
+    .post-image {
+        max-width: 100%;
+        width: 100%;
+    }
+}
